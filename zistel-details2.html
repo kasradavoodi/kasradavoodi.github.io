@@ -95,7 +95,7 @@
                         </div>
 
                         <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-                            <h2>Beat detection and SPO2 calculation</h2>
+                            <h2>Stress Detection and Quality Assessment</h2>
                             <p style="text-align: justify">
                                 <b>Objective:</b> creating a stress detection method for pulse oximeter of Zistel company. Firstly, we are working on a binary classification. After that, we aimed for multi class classification (stress, non-stress, rest, happy, etc.)  <br>
                                 <b>Method:</b> We are assessing multiple machine learning approaches (SVM, XGBoost, KNN, DT), MLP and LSTM. We  implemented a two-step preprocessing approach consisted of peak/valley detection and a XGBoost model for quality assessment in series. Firstly, input signal goes through a denoising procedure. After that, peaks and valleys are detected and given to the XGBoost model. The model assesses the quality of segments based on desired time period and a desired minimum threshold for high quality segments. Finally, feature extraction is implemented on the remaining segments and then given to the classifier model (stress /non stress). <br>
