@@ -1635,3 +1635,19 @@ h2 {
         width: 100%; /* Make sure images are fully responsive */
         object-fit: cover; /* Ensure image covers the entire slide */
     }
+
+
+
+@media (max-width: 768px) {
+    /* Change background color */
+    #navmenu ul {
+        background-color: #f0f0f0; /* Light gray background */
+    }
+
+        /* Change text color */
+        #navmenu ul li a {
+            color: #333333; /* Dark gray text */
+        }
+}
+
+
