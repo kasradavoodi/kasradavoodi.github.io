@@ -97,10 +97,10 @@
                         <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
                             <h2>Stress Detection and Quality Assessment</h2>
                             <p style="text-align: justify">
-                                <b>Objective:</b> creating a stress detection method for pulse oximeter of Zistel company. Firstly, we are working on a binary classification. After that, we aimed for multi class classification (stress, non-stress, rest, happy, etc.)  <br>
-                                <b>Method:</b> We are assessing multiple machine learning approaches (SVM, XGBoost, KNN, DT), MLP and LSTM. We  implemented a two-step preprocessing approach consisted of peak/valley detection and a XGBoost model for quality assessment in series. Firstly, input signal goes through a denoising procedure. After that, peaks and valleys are detected and given to the XGBoost model. The model assesses the quality of segments based on desired time period and a desired minimum threshold for high quality segments. Finally, feature extraction is implemented on the remaining segments and then given to the classifier model (stress /non stress). <br>
+                                <b>Objective:</b> Quality Assessment of PPG signals. Eliminating low-quality signals (segment-level and beat-leve), providing futher applications with better input signal.  <br>
+                                <b>Method:</b> Implemented a two-step approach consisted of peak/valley detection and a XGBoost model for quality assessment in series. Firstly, input signal goes through a denoising procedure. After that, peaks and valleys are detected and given to the XGBoost model, classifying beats as accepted/rejected. The model assesses the quality of segments based on desired time period and a desired minimum threshold for accepted segments. <br>
                                 <b>Software Tools:</b> Matlab, Python, scikit learn, Tensorflow, Zistel Pulse oximeter, nRF, STM32 <br>
-                                <b>Results:</b> Project is not finished yet. So, Final results are not available right now.
+                                <b>Results:</b> Sensitivity: 94.10%  Specificity: 90.11%.
                             </p>
                             <a href="index.html" class="active">Back to Home Page</a>
                         </div>
