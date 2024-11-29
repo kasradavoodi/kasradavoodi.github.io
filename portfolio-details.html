@@ -97,9 +97,11 @@
                           <h2>ICH Detection, Classification, Segmentation</h2>
                           <p style="text-align: justify">
                               <b>Objective:</b> Design an AI assistant system for physicians and surgeons in medical centers. <br>
-                              <b>Method:</b> Firstly, input data is passed to a classifier model. The output of the classifier serves as the input for the segmentation model. We are planning to go for a sequential processing such as LSTM, GRU, or even VIT models along with a fuzzy decision policy as a post-process. We have successfully beaten the literature review in classification right now. In addition, we have also aimed to train our model on a private dataset received from physicians (for segmentation, currently using a UNet with se_resnext101 encoder, augmentation, Tversky loss, 5-fold, and post-process on the predicted mask). <br>
+                              <b>Method:</b> The first classification model beat the literature in the public dataset on PhysioNet, utilizing a ResNet50 model with 3.3 augmentations, BCE with tuned weights (healthy=1, ICH=4) via a voting method, preprocess and post-process. The next Project focuses on a more complex model using a classifier and segment or model in series. The classifier is a combination of convolutional and sequential layers along with a fuzzy decision policy in the end. Moreover, this project is a joint with Iran Medical University. <br>
                               <b>Software Tools:</b> PyTorch, SMP package, Hugging Face, common numeric Python libraries (NumPy, Pandas, etc.), ChatGPT4o <br>
-                              <b>Results:</b> The project is not finished yet. Final results are not available right now.
+                              <b>Results:</b> 
+                            paitent-level scope: Sensitivity = 100% Specificity = 80%  F1 Score = 86% 
+                            slice-level Scope: Sensitivity = 94%  Specificity = 91%  F1 Score = 64%
                           </p>
                           <a href="index.html" class="active">Back to Home Page</a>
                       </div>
