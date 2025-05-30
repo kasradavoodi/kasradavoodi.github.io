@@ -242,12 +242,13 @@
                             </h4>
                         </div>
                     </div>
-
+                    
+                     <!-- Fifth Publication -->
                     <div class="col-lg-6 col-md-6 publication-item d-flex" data-aos="fade-up" data-aos-delay="100">
                         <div class="icon flex-shrink-0"><i class="bi bi-file-earmark-text"></i></div>
                         <div>
                             <!-- Title as a link that opens the modal -->
-                            <h4 class="title" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal3">
+                            <h4 class="title" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal5">
                                 A Federative Approach to Enhance the Performance and Clinical Generalizability of Intracranial Hemorrhage Segmentation Using an Innovative Deep Learning Methodology
                                 <br>(In preparation)
                             </h4>
@@ -287,7 +288,23 @@
                         </div>
                         <h4>Abstract:</h4>
                         <h5 class="modal-title" id="modalLabel2" style="text-align: justify">
-                            Photoplethysmogram (PPG) signals have become increasingly valuable for monitoring various healthcare factors, such as heart rate, blood pressure, arrhythmia, stress levels, and arterial flexibility. However, the accurate analysis of PPG signals is often hindered by the presence of artifacts and noise, which can lead to erroneous interpretations. This study proposes a novel approach for preprocessing and assessing the quality of individual beats in PPG signals to facilitate subsequent analysis. The empirical PPG data, which are publicly available, were recorded at a medical center and underwent a preprocessing stage to remove high-frequency noise and other unwanted components. A new and robust algorithm was then developed to detect the signal valleys, which were used to identify each beat individually. This valley detection method demonstrated high performance, achieving a sensitivity, positive predictive value, and F1 score of 99.33%, 99.52%, and 99.43%, respectively. Several features were extracted from each beat to distinguish good-quality beats from bad ones, considering both accuracy and computational complexity. The XGBoost machine learning model, utilizing five selected features, classified the input signals as either good or bad with an accuracy, sensitivity, and specificity of 92.11%, 94.10%, and 90.11%, respectively. The proposed approach was evaluated using the empirical PPG data, and the results demonstrate its effectiveness in improving the reliability and accuracy of PPG signal analysis compared to commonly used methods, particularly in terms of valley detection and quality assessment.
+Photoplethysmogram (PPG) signals have become increasingly valuable for monitoring various
+healthcare factors, such as heart rate, blood pressure, arrhythmia, stress levels, and arterial
+flexibility. However, the accurate analysis of PPG signals is often hindered by the presence of
+artifacts and noise, which can lead to erroneous interpretations. This study proposes a novel
+approach for preprocessing and assessing the quality of individual beats in PPG signals to facilitate
+subsequent analysis. A new and robust algorithm was developed to detect the signal valleys, which
+were used to identify each beat individually. This valley detection method demonstrated high
+performance, achieving a sensitivity, positive predictive value, and F1 score of 99.33%, 99.52%,
+and 99.43%, respectively. Several statistical and time-domain features were extracted from each
+beat to distinguish good-quality beats from bad ones, considering both accuracy and computational
+complexity. The XGBoost machine learning model, utilizing five selected features, classified the
+input signals as either good or bad with an accuracy, sensitivity, and specificity of 92.11%,
+94.10%, and 90.11%, respectively. The proposed approach was evaluated using PPG signals from
+the publicly available MIMIC III clinical database, which contains physiological data from
+intensive care unit (ICU) patients. The results demonstrate the effectiveness of the method in
+improving the reliability and accuracy of PPG signal analysis compared to commonly used
+methods, particularly in terms of valley detection and quality assessment. 
                         </h5>
                     </div>
                 </div>
@@ -321,11 +338,28 @@
                         </div>
                         <div class="modal-body" style="padding: 20px;">
                         </div>
+                        <h4>Abstract:</h4>
                         <h5 class="modal-title" id="modalLabel3" style="text-align: justify">
-                            This study is currently in the research and development phase. A collaboration has been established between the APAC research group at KNTU and Iran Medical University to gather a comprehensive dataset for our project. The aim of this project is to detect, classify, and segment intracranial hemorrhages (ICH) in brain CT scans using advanced deep learning techniques.
-                    </div>
+Timely diagnosis of Intracranial hemorrhage (ICH) on Computed Tomography (CT) scans remains a
+clinical priority, yet the development of robust Artificial Intelligence (AI) solutions is still hindered
+by fragmented public data. To close this gap, we introduce Hemorica, a publicly available collection
+of 327 head-CT examinations acquired between 2012 and 2024. Each scan has been exhaustively
+annotated for five ICH sub-types—epidural (EPH), subdural (SDH), subarachnoid (SAH), intraparenchymal (IPH), and intraventricular (IVH)— yielding patient-wise and slice-wise classification
+labels, subtype-specific bounding boxes, two-dimensional pixel masks and three-dimensional voxel
+masks. A double-reading workflow, preceded by a pilot consensus phase and supported by neurosurgeon adjudication, maintained low inter-rater variability. Comprehensive statistical analysis confirms
+the clinical realism of the dataset. To establish reference baselines, standard convolutional and
+transformer architectures were fine-tuned for binary slice classification and hemorrhage segmentation.
+With only minimal fine-tuning, lightweight models such as ResNet-18 achieved an F1 score of 0.875
+in classification, whereas a U-Net with an EfficientNet-B5 encoder reached a Dice score of 0.832 for
+lesion segmentation—figures that validate both the quality of the annotations and the sufficiency of
+the sample size. Hemorica therefore offers a unified, fine-grained benchmark that supports multi-task
+and curriculum learning, facilitates transfer to larger but weakly labelled cohorts, and facilitates the
+process of designing an AI-based assistant for ICH detection and quantification systems.    </div>
                 </div>
             </div>
+
+
+            
 
         </section>
 
